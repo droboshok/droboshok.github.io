@@ -1,0 +1,56 @@
+---
+layout: default
+title: Блог
+tagline: Cкорей ныряй в мой тихий омут<br> Tы нравишься моим чертям.
+---
+{% include JB/setup %}
+
+<div class="page-header">
+  <h2>{{ page.tagline }}</h2>
+</div>
+<hr>
+    <article class="home" style="margin-top:40px">
+      <div class="col-sm-10">
+{% for post in paginator.posts %}
+          <span class="post-date">
+            {% assign d = post.date | date: "%d" | plus:'0' %}
+            {{ post.date | date: "%B" }}
+            {% case d %}
+            {% when 1 or 21 or 31 %}{{ d }}st,
+            {% when 2 or 22 %}{{ d }}nd,
+            {% when 3 or 23 %}{{ d }}rd,
+            {% else %}{{ d }}th,
+            {% endcase %}
+            {{ post.date | date: "%Y" }}
+          </span>
+        <h3>
+          <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+        </h3>
+        <div>
+          <a href="{{ BASE_PATH }}{{ post.url }}">
+           {{ post.excerpt }}
+          </a>
+        </div>
+{% endfor %}
+      </div>
+    </article>
+<hr/>
+
+  <ul class="pager">
+    <!-- Pagination links -->
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <li><a href="{{ paginator.previous_page_path }}" class="previous">&larr; Ближе</a></li>
+      {% else %}
+        <li class="previous disabled"><span >&larr; Ближе</span></li>
+      {% endif %}
+      <li>
+      <span class="page_number ">Страница: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      </li>
+      {% if paginator.next_page %}
+        <li><a href="{{ paginator.next_page_path }}" class="next"> Дальше &rarr;</a></li>
+      {% else %}
+        <li class="next disabled"><span>Дальше &rarr;</span></li>
+      {% endif %}
+    </div>
+  </ul>

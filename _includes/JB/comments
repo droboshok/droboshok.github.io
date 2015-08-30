@@ -1,0 +1,5 @@
+{% if site.JB.comments.provider and page.comments != false %}
+
+  {% include JB/comments-providers/facebook %}
+
+{% endif %}
