@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lass="no-js" lang="ru" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" >
+
+<head>
+  <meta charset="utf-8">
+  <title>Как добавить изображение из Flickr в блог Jekyll</title>
+  <meta name="description" content="Установка плагиа в генератор сайтов Jekyll для пользователей Flickr">
+  <meta name="author" content="Andrey Amelin">
+  <meta property="fb:admins" content="100007240991418"/>
+  <meta property="fb:app_id" content="111129072574112" />
+
+  <meta property="og:locale" content="ru_RU" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@droboshok"/>
+
+
+  <meta property="og:title" content="Как добавить изображение из Flickr в блог Jekyll" />
+  <meta property="og:url" content="http://droboshok.in.ua/web/flickr-and-jekyll.html" />
+  
+  <meta property="og:description" content="Установка плагиа в генератор сайтов Jekyll для пользователей Flickr" />
+  
+  <meta property="og:image" content="http://droboshok.in.ua/web/" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="http://droboshok.in.ua/web/flickr-and-jekyll.html" />
+  
+
+  <!-- Enable responsive viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Le styles -->
+  <link href="/assets/css/normalize.css" rel="stylesheet">
+  <link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/assets/resources/bootstrap.vertical-tabs/bootstrap.vertical-tabs.min.css" rel="stylesheet">
+  <link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+
+  <!-- atom & rss feed -->
+  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+  <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default visible-xs" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a type="button" class="navbar-toggle nav-link" href="http://github.com/droboshok">
+        <i class="fa fa-github"></i>
+      </a>
+      
+      
+      <a type="button" class="navbar-toggle nav-link" href="http://twitter.com/droboshok">
+        <i class="fa fa-twitter"></i>
+      </a>
+      
+      
+      <a type="button" class="navbar-toggle nav-link" href="mailto:droboshok@ua.fm">
+        <i class="fa fa-envelope"></i>
+      </a>
+      
+      <a class="navbar-brand" href="/">
+        <img src="/img/gravatar.jpeg" class="img-circle" />
+        Droboshok<br>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/categories.html">Categories</a></li>
+        <li><a href="/tags.html">Tags</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </nav>
+
+  <!-- nav-menu-dropdown -->
+  <div class="btn-group hidden-xs" id="nav-menu">
+   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+     <i class="fa fa-bars"></i>
+   </button>
+   <ul class="dropdown-menu" role="menu">
+     <li><a href="/"><i class="fa fa-home"></i> Главная</a></li>
+     <li><a href="/categories.html"><i class="fa fa-folder"></i> Рубрики</a></li>
+     <li><a href="/tags.html"><i class="fa fa-tags"></i> Тэги</a></li>
+     <li class="divider"></li>
+     <li><a href="#"><i class="fa fa-arrow-up"></i> Вверх страницы</a></li>
+   </ul>
+ </div>
+
+ <div class="col-sm-3 sidebar hidden-xs">
+   <! -- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="/img/gravatar.jpeg" class="img-circle" />
+	</a>
+	<h3 class="title">
+		<a href="/">Droboshok</a>
+	</h3>
+	Thoughts, stories and ideas.
+</header>
+
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/droboshok">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/droboshok">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:droboshok@ua.fm">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		<li>
+			<a class="btn btn-default btn-sm" href="/rss.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<! -- sidebar.html end -->
+
+ </div>
+
+ <div class="col-sm-9 col-sm-offset-3">
+  
+<div class="page-header">
+  <h1>Как добавить изображение из Flickr в блог Jekyll </h1>
+</div>
+<article>
+	<div class="col-sm-10">
+    <span class="post-date">
+      
+      August
+      29th,
+      
+      2015
+    </span>
+
+    <div class="article_body">
+      
+<p>Мне понравилась идея когда я могу встроить изображение в свой сайт из популярных фотохостингов.Я решил использовать для этих целей Flickr по многим причинам. Во-первых достаточно большое дисковое пространство - 1 ТбБ во-вторых много пользовательских режимов, <!--more-->в-третьих достаточно предустановленных режимов отображения фото и видео, в-четвертых довольно таки высокая скорость доступа.Для создания своих статических сайтов я использую генератор <a href="/jekyll/001.html">Jekyll</a> и сегодня я расскажу как добавить и настроить плагин для вставки изображений.</p>
+
+<p>Для начала нам необходимо создать приложение,у кого нет аккаунта в Flickr - идём и <a href="https://www.flickr.com">регестрируемся</a></p>
+
+<p>Переходим по <a href="https://www.flickr.com/services/apps/create/">ссылке</a>далее жмем  <strong>Request an Api Key,</strong> здесь нам предлагают выбрать для комерческого ипользования приложения или нет. Выбираем <strong>APPLY FOR NON-COMERCIAL KEY</strong>
+<img src="https://farm1.staticflickr.com/588/20995023771_394fa9b393.jpg" width="500" height="247" alt="регестрация на Flickr" title="регестрация на Flickr" /></p>
+
+<p>Вписываем названия нашего приложения и описание, соглашаемся с условиями и нажимаем кнопку “Отправить”
+<img src="https://farm6.staticflickr.com/5792/20366456493_0d018251b4.jpg" width="500" height="247" alt="api_key on Flickr" title="" /></p>
+
+<p>Как показано на рисунке нам предоставили 
+api_key и secret
+Для нашего плагина нам понадобится api_key:6cef62fa12e54f74f3770d9d6ef2bec2
+Что еще нам понадобится от Flickr - это photoID изображения.Выбираем изображение которое вы хотите разместить на сайте,в адресной строке браузера видим ссылку типа моей -</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby">https://www.flickr.com/photos/135036651@N08/20348431344/in/dateposted-public/</code></pre></div>
+
+<p>цифры 20348431344 и есть photoID нашего изображения.</p>
+
+<p>Теперь переходим к нашему сайту. Нам понадобится установленный Jekyll и плагин, исходный код которого можно скачать на <a href="https://github.com/droboshok/Flickr-Photo-Jekyll">GitHub</a>. Добавьте файл плагина <em>main_flickr.rb</em> в папку _plugins, если такой папки нет - то создайте её.</p>
+
+<p>Так же нам понадобится внести данные api_key из Flickr в файл _config.yml</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby">flickr:
+    api_key: 6cef62fa12e54f74f3770d9d6ef2bec2</code></pre></div>
+
+<p>Создаем новую страницу или редактируем уже существующую. и в место где вы хотите разместить изображение - вставляем код</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby">{% main_photo 20348431344 %}</code></pre></div>
+
+<p>где 20348431344 это photoID нашего изображения
+Размер изображения по умолчанию 500х375
+Если вы хотите установить другой размер, тогда вам необходимо указать его в одинарных кавычках после изображения.Например:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby">{% main_photo 20348431344 &#39;Square&#39;%}</code></pre></div>
+
+<p>выведет изображение 75х75
+Вот список предустановленных размеров:</p>
+
+<ul>
+  <li>‘Square’ = 75x75</li>
+  <li>‘Large Square’ = 150x150</li>
+  <li>‘Thumbnail’ = 75x100</li>
+  <li>‘Small’ = 180x240</li>
+  <li>‘Small 320’ = 240x320</li>
+  <li>‘Medium’ = 375x500</li>
+  <li>‘Medium 640’ = 480x640</li>
+  <li>‘Medium 800’ = 600x800</li>
+  <li>‘Large’ = 768x1024</li>
+  <li>‘Large 1600’ = 1200x1600</li>
+  <li>‘Original’ = 1200x1600</li>
+</ul>
+
+<p>За более подробной информацией можно обратиться к <a href="https://www.flickr.com/services/api/">API Documentation</a></p>
+
+<p>Отлично, теперь вы сможете размещать свои фото из Flickr на своем сайте.
+Спасибо за внимание! 
+По вопросам редактирования параметров плагина обращайтесь на почту или соц.сети.</p>
+
+    </div>
+	<hr>
+
+      <section class="share">
+      
+        <h4 class="section-title">Понравилась статья? Поделись ей в:</h4>
+        <a class="btn btn-default btn-sm twitter" href="#" onclick="window.open('http://twitter.com/share?text=Как добавить изображение из Flickr в блог Jekyll;url=http://droboshok.in.ua/web/flickr-and-jekyll.html', 'twitterShare', 'width=626,height=436'); return false;" title="">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="#" onclick="window.open('http://www.facebook.com/sharer.php?s=100&p[title]=Как добавить изображение из Flickr в блог Jekyll&amp;p[summary]=Установка плагиа в генератор сайтов Jekyll для пользователей Flickr&amp;p[url]=http://droboshok.in.ua&amp;p[images][0]=http://droboshok.in.uaweb/', 'facebookShare', 'width=626,height=436'); return false;" title="Как добавить изображение из Flickr в блог Jekyll">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+		    <a class="btn btn-default btn-sm vk" href="#" onclick="window.open('http://vkontakte.ru/share.php?url=http://droboshok.in.ua/web/flickr-and-jekyll.html&amp;image=http://droboshok.in.ua/web/&amp;description=Установка плагиа в генератор сайтов Jekyll для пользователей Flickr', 'pinterestShare', 'width=750,height=350'); return false;" title="Vkontakte">
+          <i class="fa fa-google-plus fa-vk"></i>
+          Вконтакте
+        </a>
+        <a class="btn btn-default btn-sm gplus" href="#" onclick="window.open('https://plusone.google.com/_/+1/confirm?hl=ru-RU&amp;url=http://droboshok.in.ua/web/flickr-and-jekyll.html', 'googleShare', 'width=626,height=436'); return false;" title="Как добавить изображение из Flickr в блог Jekyll" target="_blank">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+	  <hr>
+
+    
+    <ul class="tag_box list-unstyled list-inline">
+      <li><i class="fa fa-folder-open"></i></li>
+      
+      
+      
+      <li><a href="/categories.html#web-ref">
+        web <span>(3)</span>
+        
+      </a></li>
+      
+      
+    </ul>
+    
+
+    
+    <ul class="list-inline">
+      <li><i class="fa fa-tags"></i></li>
+      
+      
+      
+      <li>
+        <a href="/tags.html#jekyll-ref">
+          jekyll <span>(1)</span>
+          ,
+        </a>
+      </li>
+      
+      <li>
+        <a href="/tags.html#flickr-ref">
+          flickr <span>(1)</span>
+          ,
+        </a>
+      </li>
+      
+      <li>
+        <a href="/tags.html#plugin-ref">
+          plugin <span>(1)</span>
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+    
+
+    <hr>
+
+    <ul class="pager">
+      
+      <li class="previous"><a href="/jekyll/links.html" title="Подсветка меню в Jekyll">&larr; Previous</a></li>
+      
+      
+      <li class="next disabled"><a>Next &rarr;</a>
+        
+      </ul>
+
+
+      <div id="fb-root"></div>
+<script async>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.4&appId=111129072574112";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments"  data-num-posts="5" data-width="580" data-colorscheme="light></div>
+    </div>
+
+    <div class="col-sm-2 sidebar-2">
+
+    </div>
+	
+
+  </article>
+  <div class="clearfix"></div>
+
+
+  <hr>
+  <div id="footer">
+      <div class="container">
+	  <ul class="list-inline">
+  <li><a class="text-muted" href="/index.html">Главная</a>
+  </li>
+  <li><a class="text-muted" href="/pages.html">Статьи</a>
+  </li>
+  <li><a class="text-muted" href="/archive.html">Архив</a>
+  </li>
+  <li><a class="text-muted" href="/tags.html">Тэги</a>
+  </li>
+  <li><a class="text-muted" href="/articles/about.html">Об авторе</a>
+  </li>
+  <li><a class="text-muted" href="/categories.html">Рубрики</a>
+  </li>
+</ul>
+        
+      </div>
+    </div>
+
+
+ </div>
+
+ 
+ <script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+ <script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+
+</html>
+
+
