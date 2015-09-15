@@ -1,0 +1,41 @@
+/* 1.9 Ramp separator */
+.ramp { 
+  height: 220px;
+}
+.ramp-inn {
+  width: 0; height: 0; border-style: solid solid solid dashed; border-width: 220px 0 0 0; border-top-width: 220px;
+}
+.ramp-top {
+  border-left-width: 1349px;border-top-width:220px;
+}
+.ramp-bottom {
+  border-bottom-width: 220px; border-top-width:0; border-left-width: 0;
+}
+.normal-separator.header-separator {
+  display: none;
+}
+.footer-separator {
+  height: 0;
+}
+.footer-normal-separator {
+  visibility: hidden;
+}
+
+/* ramp svg */
+.ramp-separator {
+  height: 220px; position: relative; z-index: 2;
+}
+.ramp-separator, 
+.ramp-separator svg {
+    height: 220px;
+    width: 100%;
+}
+.ramp-separator {
+  height: 220px; max-height: 400px; position: relative; z-index: 2; 
+}
+
+/*fix customizer*/
+body.wp-customizer .ramp-separator, 
+body.wp-customizer .ramp-separator svg {
+  height: 220px!important;
+}

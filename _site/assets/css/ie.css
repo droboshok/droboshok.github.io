@@ -1,0 +1,30 @@
+/*For IE 9 */
+
+.tagcloud { text-align:justify\9; }
+.fullwrap-video video { display:none; }
+.search-form_header input[type="text"] { padding-top: 0; }
+
+/*menu hide layout*/
+body.page #header.menu-default-hide.header-slide-down,
+.no-touch body.page #header.menu-default-hide:not(.header-slide-down):hover {
+	-ms-transform: translateY(-40px);
+	transform: translateY(-40px); 
+}
+body.page #header.menu-default-hide.header-slide-down #logo,
+body.page #header.menu-default-hide:not(.header-slide-down):hover #logo {
+	left: 0; 
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+body.page #header.menu-default-hide.header-slide-down #logo a,
+.no-touch body.page #header.menu-default-hide:not(.header-slide-down) #header-inn:hover #logo a {
+	line-height: 80px; height: 80px;
+}
+body.page #header.menu-default-hide.header-slide-down .logo-image,
+body.page #header.menu-default-hide:not(.header-slide-down):hover #logo .logo-image {
+	max-height: 40px;
+}
+body.page #header.menu-default-hide.header-slide-down .header-bg,
+.no-touch body.page #header.menu-default-hide:not(.header-slide-down) #header-inn:hover ~ .header-bg {
+	height: 80px; width: 100%;
+}

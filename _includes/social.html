@@ -1,0 +1,11 @@
+                      <div class="social-share clearfix">
+                        <div class="social-share-buttons">
+                          <button onclick="window.open('http://www.facebook.com/sharer.php?s=100&p[title]={{ page.title }}&amp;p[summary]={{ page.description }}&amp;p[url]={{ site.url }}{{ post_url }}&amp;p[images][0]={{page.image | append: "_m.jpg" }}', 'facebookShare', 'width=626,height=436'); return false;" title="{{ page.title }}" class="social-share-facebook social-share-button"><span class="fa fa-facebook"></span> Share</button>
+                          <button onclick="window.open('http://twitter.com/share?text={{ page.title }};url={{ site.url }}{{ page.url }}', 'twitterShare', 'width=626,height=436'); return false;" title="{{ page.title }}" class="social-share-twitter social-share-button"><span class="fa fa-twitter"></span> Tweet</button>
+                          <button onclick="window.open('https://plusone.google.com/_/+1/confirm?hl=ru-RU&amp;url={{ site.url }}{{ page.url }}', 'googleShare', 'width=626,height=436'); return false;" title="{{ page.title }}" target="_blank" class="social-share-google-plus social-share-button"><span class="fa fa-google-plus"></span> Share</button>
+                          <button onclick="window.open('https://vk.com/share.php?url={{ site.url }}{{ page.url }}&amp;media={{ page.image | append: "_m.jpg" }}&amp;text={{ page.title}}, 'VK.Share', 'width=750,height=350'); return false;" title="{{ page.title }}" class="social-share-vk social-share-button"><span class="fa fa-vk"></span> Share</button>
+                        </div>
+                      </div>
+
+
+

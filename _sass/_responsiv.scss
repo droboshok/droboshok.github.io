@@ -1,0 +1,174 @@
+/*  
+ 1.6 Responsive layout
+*/
+.ux-mobile #header {
+  line-height: 60px; height: 60px; position: fixed!important; box-shadow: 0 1px 0 rgba(0,0,0,.1);
+}
+.ux-mobile #wrap-outer,
+body.page.menu-default-show-bg-body.ux-mobile #wrap-outer {
+  padding-top: 60px;
+}
+body.page.ux-mobile #header.menu-default-hide #header-inn-main {
+  visibility: visible; opacity: 1;
+}
+.ux-mobile #header .logo-h1 {
+   font-size: 20px;
+}
+.ux-mobile #header #logo .logo-h1 {
+  line-height: 60px;
+}
+.ux-mobile #header #logo,
+.ux-mobile #header #logo a {
+  line-height: 60px; height: 60px;
+}
+body.page.ux-mobile #header.menu-default-hide .header-bg {
+  display: none;
+}
+body.page.ux-mobile #header.menu-default-hide #header-inn {
+  height: 60px;
+}
+.no-touch body.page.ux-mobile #header.menu-default-hide:not(.header-slide-down) #header-inn:hover #logo,
+body.page.ux-mobile #header.menu-default-hide #logo,
+.no-touch body.page.ux-mobile #header.menu-default-hide:not(.header-slide-down) #header-inn:hover #logo a,
+body.page.ux-mobile #header.menu-default-hide #logo a,
+.no-touch body.page.ux-mobile #header.menu-default-hide:not(.header-slide-down) #header-inn:hover .logo-image {
+  -webkit-animation:none; -moz-animation:none;animation:none; height: auto;
+}
+.no-touch body.page.ux-mobile #header.menu-default-hide:not(.header-slide-down):hover{
+  -webkit-animation:none; -moz-animation:none;animation:none;
+}
+body.page.ux-mobile #header.menu-default-hide #logo .logo-image {
+  max-height: 40px;
+}
+body.page.ux-mobile .menu-default-hide ~ #top-wrap:not(.top-wrap-with-canvas) {
+    padding-top: 0; height: 240px;
+}
+body.page.ux-mobile #top-wrap.top-wrap-with-canvas #title-bar-in-top {
+  padding-top: 0;
+}
+
+/*  Header Responsive menu  */
+.ux-mobile #navi {
+  position: absolute; top: 100%; left: 0; width: 100%; overflow-x: hidden; overflow-y: scroll; display: none; 
+  -webkit-overflow-scrolling: touch;
+}
+.ux-mobile #navi .sub-menu { 
+  left: 0!important; right: auto!important;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.ux-mobile #navi > div > ul > li {
+  line-height: 60px; box-shadow: 0 1px 0 rgba(0,0,0,.1);
+}
+.ux-mobile #navi > div > ul > li:first-child {
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+.ux-mobile #navi li {
+  margin:0; padding:0; position: relative; float:none; clear: both; text-align: left;
+}
+.ux-mobile #navi ul {
+  margin:0; padding:0; display: block; width:100%; left:0; position: relative;
+}
+.ux-mobile #navi a {
+  padding: 0 20px 0 40px; width:auto; display: inline-block; margin:0; text-decoration: none; position: relative;
+}
+.ux-mobile #navi li li a {
+  border-top-style: none; padding:8px 40px; 
+} 
+.ux-mobile #navi > div > ul > li > a {
+  padding: 0; margin-left: auto; margin-right: auto; width: 90%; display: block;
+}
+.ux-mobile #navi .sub-menu {
+  margin-left: 40px;
+}
+.ux-mobile #navi  > li > a {
+   line-height: 20px !important; height: 40px !important;
+}
+.ux-mobile #navi  ul a { 
+  padding-left:40px;
+}
+.ux-mobile #navi ul li ul.sub-menu li a { 
+  padding: 0 20px; 
+}
+.ux-mobile #navi > div > ul > li > ul.sub-menu {
+  opacity: 1; visibility: visible;margin-top: -10px; padding-bottom: 20px;
+}
+.ux-mobile #navi .sub-menu .sub-menu {
+  position: static; display: block; margin-left: 20px;
+}
+.ux-mobile #navi .sub-menu > li {
+  background-color: transparent!important;
+}
+.ux-mobile #navi .sub-menu > li:before {
+  content: "\f105"; font-family: 'FontAwesome'; font-size: 14px;
+}
+.ux-mobile #navi  ul ul a { 
+  padding-left:60px;
+}
+.ux-mobile #navi ul ul ul a {
+  padding-left:80px;
+}
+.ux-mobile #navi ul ul ul ul a {
+  padding-left:100px;
+}
+.ux-mobile #navi .sub-menu>li:first-child{
+  padding-top: 0;
+}
+.ux-mobile #navi .sub-menu>li:last-child{
+  padding-bottom: 0;
+}
+#advanced_menu_toggle { 
+  display: none; font-size: 20px; height: 60px; line-height: 60px; text-decoration: none; float: right;
+}
+.ux-mobile #advanced_menu_toggle { 
+  display: block; 
+}
+.ux-mobile #header-inn.container {
+  position: static; 
+}
+.ux-mobile #header-inn-main { 
+  position: static; width: 100%; margin-top: -60px; float: left;
+}
+.ux-mobile #top-search,
+.ux-mobile .social-icons-header,
+.ux-mobile #navi > div > ul > li > a:after {
+  display: none;
+}
+body.page.ux-mobile #header.menu-default-hide #logo {
+  position: relative; z-index: 10; left: 0; padding-left: 0; padding-right: 0; 
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+#logo {
+  position: relative; z-index: 10;
+}
+body.page.ux-mobile #content.content-top-space,
+.menu-default-show-bg-body.ux-mobile #wrap-outer {
+  padding-top: 60px;
+}
+.menu-default-show-body.page.ux-mobile #header,
+body.page.ux-mobile #header.menu-default-hide {
+  top: 0;
+}
+
+
+
+/*  Body Responsive */
+.ux-mobile .gallery-wrap-sidebar .gallery-info-wrap {
+  padding-right: 0; padding-bottom: 100px;
+}
+.ux-mobile .gallery-info-wrap.pull-right {
+  padding-left: 0; padding-right: 0;
+}
+.ux-mobile .theme-parallax {
+  -webkit-transform: translate3d(0px, 0px, 0px)!important;
+  -moz-transform: translate3d(0px, 0px, 0px)!important;
+  -ms-transform: translate3d(0px, 0px, 0px)!important;
+  transform: translate3d(0px, 0px, 0px)!important;
+}

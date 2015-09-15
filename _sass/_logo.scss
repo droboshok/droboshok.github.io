@@ -1,0 +1,33 @@
+/* 1.2 Logo */
+#logo { 
+  line-height: 80px; height: 80px; float: left;
+}
+#logo a {
+  position: relative;  display: table-cell; vertical-align: middle; height: 80px; line-height: 80px;
+}
+.mobile_active #logo a{
+  top:0;
+}
+#logo h1 {
+  line-height: 80px;
+}
+.logo-h1 {
+  font-weight: 600; font-size: 20px; letter-spacing: 2px;
+}
+.logo-image { 
+  display: block; height:auto; width: auto; max-height: 50px; max-width: 300px;  
+}
+.ux-mobile .logo-image {
+  max-height: 40px; max-width: 225px;
+}
+#headerinn_s { float:left; }
+.header-hide-topbar .head-meta-icon,
+.header-hide-topbar #advanced_menu_toggle2 { 
+  display: none !important;
+}
+#main {
+  position: relative; z-index:100;
+}
+#header-inn-main {
+  float: right;
+}

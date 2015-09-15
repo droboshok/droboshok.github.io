@@ -1,0 +1,18 @@
+/*  1.1 General  */
+#header { 
+  position: fixed; z-index:999; left: 0; top:0; width: 100%; height: 80px; -webkit-backface-visibility:hidden;
+  /*-webkit-backface-visibility:hidden;-webkit-transform: translateZ(0);
+  Choppy scrolling in Chrome*/
+}
+body.page #header.menu-default-hide {
+  top:20px;
+}
+
+body.page.logged-in.admin-bar #header.menu-default-show,
+body.page.logged-in.admin-bar #header.menu-default-hide {
+  top: 52px;
+}
+body.logged-in.admin-bar #header,
+body.logged-in.admin-bar #header.menu-default-show-bg {
+  top: 32px;
+}

@@ -2,4 +2,82 @@
 layout: default
 ---
 {% include JB/setup %}
-{% include themes/drobo/post.html %}
+    
+      <div style="margin-bottom: 325px;" id="wrap-outer">
+        <div id="top"></div>
+          {% include header2.html %}  
+
+
+      <div id="top-wrap" style="" class="">
+        <div id="title-bar-in-top">
+          <div class="title-bar middle-ux" id="main-title-in-top">
+
+              
+            <h1 class="main-title"> 
+              
+              <h1 class="main-title"> 
+              {% assign lit =  page.title | slice: 0 %}
+                <span class="heighlight">{{ lit }}</span>{{ page.title | remove_first: lit }}            
+            </h1>
+                
+              
+
+          </div><!--End main-title-in-top-->
+        </div><!--End title-bar-in-top-->
+      </div><!--End topwrap--> 
+
+<div class="normal-separator header-separator"></div>
+
+
+
+
+      <div class="normal-separator header-separator"></div>
+      <div id="wrap">
+        <div id="content" class="content-bottom-space content-top-space">
+          <div id="post" class="post type-post status-publish has-post-thumbnail hentry category-blog category-uncategorized">
+            <div class="row-fluid content_wrap_outer fullwrap-layout">
+              <div id="content_wrap" class="container">
+                  <!-- image -->
+                <div class="entry" >
+                  <div class="width4 " align="center">
+                    <a href="{{ page.image | append: '_c.jpg' }}" title="{{ page.title }}"  >
+                      <img src="{{ page.image | append: '_c.jpg' }}" alt="{{ page.title }}" align="center">
+                    </a>
+                  </div><!--end width4-->
+                    <br>
+                    <br>
+                 
+                  {{ content }}
+                </div>
+                <div class="row-fluid meta-social">
+
+                  <div class="span6">
+                    {% include post_info.html %}
+
+                  </div>
+                  <div class="span6">
+                    <!--Social network share icon-->
+                    {% include social.html %}
+                  </div>
+                </div>
+                <!--Post navigation-->
+                {% include post_nav.html %}
+
+              <hr>
+                {% include JB/comments-providers/facebook %}
+
+              </div>
+              <!--End content_wrap-->
+            </div>
+            <!--End content_wrap_outer-->
+          </div>
+          <!--end row-fluid-->
+        </div>
+        <!--End content-->
+        <div class="footer-normal-separator footer-separator"></div>
+      </div>
+      <!--End wrap -->
+    </div>
+    <!--End wrap-outer-->
+
+

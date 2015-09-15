@@ -1,6 +1,87 @@
----
-theme :
-  name : drobo
----
-{% include JB/setup %}
-{% include themes/drobo/default.html %}
+<!DOCTYPE html>
+<html style="height: auto;" class=" js no-touch cssanimations csstransforms csstransforms3d csstransitions inlinesvg cssfilters svgfilters" lang="ru" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+
+<head>
+    <title>{{ page.title }}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta name="description" content="{{ site.description}}">
+  <meta name="author" content="Andrey Amelin">
+  <meta property="fb:admins" content="100007240991418"/>
+  <meta property="fb:app_id" content="111129072574112" />
+
+  <meta property="og:locale" content="ru_RU" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@droboshok"/>
+
+
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  
+  <meta property="og:description" content="{{ page.description }}" />
+  
+  <meta property="og:image" content="{{ page.image | append: "_m.jpg" }}" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<!--Favoicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-114x114.png">
+    <!--style-->
+
+    <link rel="stylesheet" id="ux-interface-bootstrap-css" href="{{site.assets.css}}/normalize.css" type="text/css" media="all">
+    <link rel="stylesheet" id="ux-interface-bootstrap-css" href="{{site.assets.css}}/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" id="font-awesome-css" href="{{site.assets.css}}/font-awesome.min.css" type="text/css" media="all">
+   
+    
+    <link rel="stylesheet" id="ux-interface-pagebuild-css" href="{{site.assets.css}}/pagebuild.css" type="text/css" media="all">
+    
+    <link rel="stylesheet" id="ux-interface-style-css" href="{{site.assets.css}}/style.css" type="text/css" media="all">
+    <!--Link Google fonts -->
+
+    <link rel="stylesheet" href="{{site.assets.css}}/main.css" type="text/css" >
+    <link rel="stylesheet" href="{{site.assets.css}}/wrong.css" type="text/css" >
+
+    <!-- IE hack -->
+    <!--[if lte IE 9]>
+    <link rel='stylesheet' id='cssie'  href='css/ie.css' type='text/css' media='screen' />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/ie.js"></script>
+    <link rel='stylesheet' id='cssie8'  href='css/ie8.css' type='text/css' media='screen' />
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <div style="width: 100%;" class="messagebox_orange">Your browser is obsolete and does not support this webpage. Please use newer version of your browser or visit <a href="http://www.ie6countdown.com/" target="_new">Internet Explorer 6 countdown page</a>  for more information. </div>
+    <![endif]-->
+  </head>
+<body style="height: auto;" class="single single-post postid-2003 single-format-gallery  responsive-ux menu-default-show-bg-body">
+      {% include loading.html %}
+    
+    {{ content }}
+      
+    <footer style="position: fixed;" id="footer">
+      <div id="footer-inn">
+        <!--<div id="back-top">TOP<span class="back-top-icon"></span></div>-->
+        <div id="logo-footer">
+          <a href="{{ HOME_PATH }}" title="Theone Responsive Wordpress Theme demo3">
+            <h1 class="logo-h1">DROBO<span class="heighlight">SHOK</span></h1>
+          </a>
+        </div>
+        <!--Social icons-->
+        {% include soc.html %}
+      </div>
+      <!--End footer-inn-->
+    </footer>
+
+    <!--end video-overlay-->
+     <script async type="text/javascript" src="{{site.assets.js}}/jquery-1.js"></script>
+
+  <script async type="text/javascript" src="{{site.assets.js}}/jquery.js"></script>
+    <script async type="text/javascript" src="{{site.assets.js}}/main.js"></script>
+
+
+
+  
+</body></html>

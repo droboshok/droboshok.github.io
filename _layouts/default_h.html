@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html style="height: auto;" class=" js no-touch cssanimations csstransforms csstransforms3d csstransitions inlinesvg cssfilters svgfilters" lang="ru" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+
+<head>
+    <title>{{ site.title }}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+  
+  <meta name="description" content="{{ site.description}}">
+  <meta name="author" content="Andrey Amelin">
+  <meta property="fb:admins" content="100007240991418"/>
+  <meta property="fb:app_id" content="111129072574112" />
+
+  <meta property="og:locale" content="ru_RU" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@droboshok"/>
+
+
+  <meta property="og:title" content="Блог" />
+  <meta property="og:url" content="http://droboshok.in.ua/index.html" />
+  
+  <meta property="og:description" content="" />
+  
+  <meta property="og:image" content="http://droboshok.in.ua/img/apple-touch-icon-114x114.png" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="http://droboshok.in.ua/index.html" />
+<!--Favoicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-114x114.png">
+<!--css-->
+    <link rel="stylesheet" href="{{site.assets.css}}/normalize.css" type="text/css" media="all">
+    <link rel="stylesheet" id="font-awesome-css" href="{{site.assets.css}}/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="ux-interface-bootstrap-css" href="{{site.assets.css}}/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" id="ux-interface-pagebuild-css" href="{{site.assets.css}}/pagebuild.css" type="text/css" media="all">
+    <link rel="stylesheet" href="{{site.assets.css}}/landing.css" type="text/css" media="all">
+    <link rel="stylesheet" id="ux-interface-style-css" href="{{site.assets.css}}/style.css" type="text/css" media="all">
+
+<link rel="stylesheet" href="{{site.assets.css}}/main.css" type="text/css" media="all">
+<link rel="stylesheet" href="{{site.assets.css}}/wrong.css" type="text/css" media="all">
+
+  
+
+
+
+</head>
+
+
+<body class="responsive-ux page menu-default-hide-body">
+
+  <div class="demo-wrap">
+
+<!-- Hesder -->{% include header2.html %}
+
+    <div class="container">
+      <div class="welcome-section">Скорей ныряй в мой тихий омут <br>- Ты нравишься моим чертям.</div>
+    </div>
+
+
+
+<!-- content -->
+<div id="wrap">   
+    <div id="content" class="content-bottom-space content-top-space">
+        
+        <div class="container ">
+    
+            <div class="row-fluid two-cols-layout">
+    
+                <div id="content_wrap">
+                
+                        <div class="archive-wrap">
+    
+                    
+        {{ content }}
+    
+                
+                            
+    
+                        <div class="clearfix pagenums pagenums-default"></div>  
+    
+                        </div><!--end archive-wrap-->
+    
+                    
+                </div><!--End content_wrap-->      
+    
+            </div><!--End row-fluid two-cols-layout-->
+    
+        </div><!--End container-->
+    
+    </div><!--End content-->
+  
+          
+      <div class="footer-normal-separator footer-separator"></div>
+        
+    
+</div><!--End wrap -->
+  
+<!-- EndContent  -->
+        
+
+    <footer id="footer-inn">
+      
+
+        <div id="logo-footer">
+          <a href="/index.html" title="">
+            <h1 class="logo-h1">DROBO<span class="heighlight">SHOK</span></h1>
+          </a>
+        </div>
+        <!--Social icons-->
+{% include soc.html %}
+
+
+    </footer>
+
+  </div><!--demo-wrap-->
+
+  <!-- <div id="site-loading-mask" style="display:none"></div> -->
+    <!--End wrap-outer-->
+
+
+
+
+      <script type="text/javascript" src="{{site.assets.js}}/jquery-1.js"></script>
+      <script type="text/javascript" src="{{site.assets.js}}/main.js"></script>
+      <script type="text/javascript" src="{{site.assets.js}}/jquery.js"></script>
+      <script type="text/javascript" src="{{site.assets.js}}/landing.js"></script>
+
+    
+  </body>
+
+  </html>

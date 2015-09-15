@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		},
+		{
+			"path": "/home/andrew/Desktop/droboshok.github.io"
+		}
+	],
+	"settings":
+	{
+		"Jekyll":
+		{
+			"drafts_path": "/home/andrew//Desktop/Project/_drafts",
+			"posts_path": "/home/andrew//Desktop/Project/_posts"
+		}
+	}
+}

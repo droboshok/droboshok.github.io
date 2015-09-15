@@ -1,0 +1,34 @@
+    <header id="header" class="menu-default-hide">
+      <div id="header-inn" class="container">
+        <div id="logo">
+            <a href="/index.html" title="{{ site.description }}">
+              <h1 class="logo-h1">DROBO<span class="heighlight">SHOK</span></h1>
+            </a>
+          </div>
+        <div id="header-inn-main">
+          <a id="advanced_menu_toggle" href="#"><i class="icon-m-menu"></i></a>
+          <nav style="max-height: none;" id="navi" class="clearfix">
+            <div id="navi_wrap" class="menu-themonemenu-container">
+              <ul class="menu">
+              {% for link in site.data.links %}
+                {% assign active = nil %}
+                  {% assign link_menu = link.url | remove: ".html" %}
+                  {% if page.url contains link_menu %}
+                    {% assign active = 'current-menu-item' %}
+                   
+                  {% endif %}
+                    <li class="menu-item {% if forloop.first %}{% endif %} {{ active }} {% if forloop.last %}{% endif %}">
+                       <a href="{{ link.url }}">{{ link.title }}</a>
+                    </li>
+
+
+                {% endfor %}
+               
+              </ul>
+            </div><!--End navi_wrap-->
+          </nav>
+        </div><!--End header-inn-main-->
+      </div><!--End header-inn-->
+      <div class="header-bg"></div>
+  </header>
+

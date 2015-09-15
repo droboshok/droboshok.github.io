@@ -6,4 +6,4 @@
   js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.4&appId={{ site.JB.comments.facebook.appid }}";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-comments"  data-num-posts="{{ site.JB.comments.facebook.num_posts }}" data-width="{{ site.JB.comments.facebook.width }}" data-colorscheme="{{ site.JB.comments.facebook.colorscheme }}></div>
+<div class="fb-comments"  data-num-posts="{{ site.JB.comments.facebook.num_posts }}" data-width="{{ site.JB.comments.facebook.width }}" data-colorscheme="{{ site.JB.comments.facebook.colorscheme }}"></div>

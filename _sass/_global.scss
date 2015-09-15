@@ -1,0 +1,119 @@
+/*content font color*/
+body,a,.entry p a:hover,.text_block a:hover,#content_wrap,#comments,.blog-item-excerpt,.archive-unit-excerpt,.gallery-wrap-slider .flex-direction-nav a[class*="flex-"],.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close,.archive-meta-item a:hover,.entry code,.text_block code,
+h3#reply-title small, #comments .nav-tabs li.active h3#reply-title .logged,#comments .nav-tabs li a:hover h3 .logged,.testimonial-thum-bg i.fa,
+.header-info-mobile,.carousel-wrap a.disabled:hover,#respondwrap input#submit,.contactform input[type="submit"] { 
+  color:$text-color; 
+}
+
+pre, code {
+    font-family: "fira mono",monospace;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    text-rendering: auto;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.author .author-image {
+  float: left;
+  margin-right: 20px;
+}
+
+/*----------------------------------------------- 
+
+         8. Tinymce/Editor Compatible 
+
+-------------------------------------------------*/
+.entry pre {background-color: #002b36;}
+.entry h1,.entry h2,.entry h3,.entry h4,.entry h5,.entry h6,
+.text_block h1,.text_block h2,.text_block h3,.text_block h4,.text_block h5,.text_block h6 {
+  font-size:28px; font-size: 2.8rem; line-height: 1.5; letter-spacing: 3px; margin-bottom: 20px;
+}
+.entry h1 {}
+.entry h2,.text_block h2 { font-size:26px; font-size: 2.6rem; }
+.entry h3,.text_block h3 { font-size:22px; font-size: 2.2rem; letter-spacing: 2px; }
+.entry h4,.text_block h4 { font-size:20px; font-size: 2.0rem; letter-spacing: 2px; }
+.entry h5,.text_block h5 { font-size:18px; font-size: 1.8rem; letter-spacing: 1px; }
+.entry h6,.text_block h6 { font-size:16px; font-size: 1.6rem; letter-spacing: 1px; }
+.comment-content img, 
+.entry-content img, 
+.entry-summary img, 
+#site-header img, 
+.widget img, 
+.wp-caption {
+  max-width: 100%;
+}
+.alignleft{ float:left; margin-right:10px; margin-bottom:10px; } 
+.alignright{ float:right; margin-left:10px; margin-bottom:10px;} 
+.aligncenter{ margin-left:auto; margin-right: auto; display: block; } 
+.wp-caption-text{
+  font-style: italic;
+}
+address{ 
+  font-style:italic; 
+}
+.entry ul,
+.entry ol,
+.text_block ul, 
+.text_block ol {
+  margin-bottom: 20px;
+}
+.entry ul li,
+.text_block ul li,
+.icon_text ul li,
+.tab-pane ul li,
+.accordion-group ul li{
+  list-style: disc; margin-left: 30px; 
+}
+.entry ol li,
+.text_block ol li,
+.icon_text ol li,
+.tab-pane ol li,
+.accordion-group ol li{
+  list-style: decimal; margin-left: 30px;
+}
+#comments .tab-pane ol li,
+#comments .tab-pane ul li{
+  list-style: none; margin-left:0;
+}
+.entry table,.entry th,.entry td,
+.text_block table,.text_block th,.text_block td,
+.icon_text table,.icon_text th,.icon_text td,
+.tab-pane table,.tab-pane th,.tab-pane td,
+.accordion-group table,.accordion-group th,.accordion-group td {
+  border: 1px solid #ccc; padding: 6px;
+}
+.entry th,.entry td,
+.text_block th,.text_block td,
+.icon_text th,.icon_text td,
+.tab-pane th,.tab-pane td,
+.accordion-group th,.accordion-group td{
+  border-width: 0 1px 1px 0;
+}
+.entry table,
+.text_block table,
+.icon_text table,
+.tab-pane table,
+.accordion-group table{
+  border-width: 1px 0 0 1px;
+}
+blockquote {
+  font-size: 16px; font-size: 1.6rem; font-style: italic; line-height: 1.5;
+}
+blockquote em, blockquote i, blockquote cite {
+  font-style: normal; font-weight: bold;
+}
+.entry dl {
+  margin: 0 30px;
+}
+.entry dd {
+  margin-bottom: 30px; margin-left: 0;
+}
+.entry pre,
+.text_block pre {
+  padding: 30px; border: none; width: 90%; margin: 0 auto 20px;
+}
+
+
+;

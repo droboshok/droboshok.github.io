@@ -1,25 +1,59 @@
-
-
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-        <title>{{ site.title }}</title>
-        <description>{{ site.title }} - {{ site.author.name }}</description>
-        <link>{{ site.url }}{{ site.rss_path }}</link>
-        <link>{{ site.url }}</link>
-        <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
-        <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
+        <title>Droboshok</title>
+        <description>Droboshok - Andrey Amelin</description>
+        <link>http://localhost:3000/</link>
+        <link>http://localhost:3000/</link>
+        <lastBuildDate>2015-09-15T18:16:24+03:00</lastBuildDate>
+        <pubDate>2015-09-15T18:16:24+03:00</pubDate>
         <ttl>1800</ttl>
 
-{% for post in site.posts %}
+
         <item>
-                <title>{{ post.title }}</title>
-                <description>{{ post.excerpt | xml_escape }}</description>
-                <link>{{ site.url }}{{ post.url }}</link>
-                <guid>{{ site.url }}{{ post.id }}</guid>
-                <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+                <title>Большая шпаргалка для Jekyll. </title>
+                <description>Наиболее чосто используемые фильтры и команды Jekyll. Их описание установки, настройки и использо...</description>
+                <link>http://localhost:3000//jekyll/2015/09/jekyll.html</link>
+                <pubDate>2015-09-14T00:00:00+03:00</pubDate>
         </item>
-{% endfor %}
+
+        <item>
+                <title>Как добавить изображение из Flickr в блог Jekyll</title>
+                <description>Мне понравилась идея когда я могу встроить изображение в свой сайт из популярных фотохостингов.Я ...</description>
+                <link>http://localhost:3000//jekyll/2015/08/flickr-and-jekyll.html</link>
+                <pubDate>2015-08-29T00:00:00+03:00</pubDate>
+        </item>
+
+        <item>
+                <title>Подсветка меню в Jekyll</title>
+                <description>
+Все кто пользуется генератором статических сайтов Jekyll сталкивался с ситуацией когда возникает...</description>
+                <link>http://localhost:3000//jekyll/2015/01/links.html</link>
+                <pubDate>2015-01-04T00:00:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Свой сервис коротких ссылок</title>
+                <description>В последнее время я все чаще стал использовать для своих сторонние сервера для хранения изображен...</description>
+                <link>http://localhost:3000//web/2014/08/shortlink.html</link>
+                <pubDate>2014-08-26T00:00:00+03:00</pubDate>
+        </item>
+
+        <item>
+                <title>Google Drive - бесплатный хостинг</title>
+                <description>
+Google опять пришел на выручку сайто строителям, на этот раз тем что можно пользоваться 15гб бес...</description>
+                <link>http://localhost:3000//web/2014/08/godrive.html</link>
+                <pubDate>2014-08-26T00:00:00+03:00</pubDate>
+        </item>
+
+        <item>
+                <title>Вывод анонсов новостей на Главную в Jekyll Bootsrap</title>
+                <description>Совсем недавно мой взгляд упал на Github как на сервис на котором можно размешать сайты Немного п...</description>
+                <link>http://localhost:3000//jekyll/2014/08/001.html</link>
+                <pubDate>2014-08-21T00:00:00+03:00</pubDate>
+        </item>
+
 
 </channel>
 </rss>

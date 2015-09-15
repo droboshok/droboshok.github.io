@@ -1,0 +1,309 @@
+/* 1.3 header layout */
+/*Menu show no bg*/
+.menu-default-show-body.page #header {
+ top: 20px;
+}
+
+/*Menu show with bg*/
+body.page.menu-default-show-body #header.menu-default-show.headerbg {
+  top:0;
+  transition-property: background-color, top;
+  transition-duration:.4s, .4s;
+  transition-timing-function:ease-in, ease-in;
+  transition-delay:.5s, 0s;
+}
+body.page.logged-in.admin-bar.menu-default-show-body #header.menu-default-show.headerbg {
+  top:32px;
+}
+body.page.menu-default-show-body #header.menu-default-show {
+  transition-property: background-color, top;
+  transition-duration:.4s, .4s;
+  transition-timing-function:ease-in, ease-in;
+  transition-delay:.5s, 0s;
+}
+body.page.menu-default-show-bg-body #wrap-outer {
+  padding-top: 80px;
+}
+body.page.menu-default-show-bg-body #top-wrap {
+  padding-top: 0;
+}
+
+/* Menu hide default */
+
+body.logged-in.admin-bar.page #header.menu-default-hide {
+  top:52px;
+}
+body.page #header.menu-default-hide #header-inn {
+  height: 150px;
+}
+body.page #header.menu-default-hide.header-slide-down #header-inn  {
+  height: 80px;
+}
+
+body.page:not(.ux-mobile) #header.menu-default-hide {
+  background-color: transparent!important; top: 40px;
+  -webkit-animation:HeaderAnimationUnzip 1s ease normal both ; 
+  -moz-animation:HeaderAnimationUnzip 1s ease normal both ; 
+  animation:HeaderAnimationUnzip 1s ease normal both ; 
+}
+body.page #header.menu-default-hide.header-slide-down,
+.no-touch body.page #header.menu-default-hide:not(.header-slide-down):hover {
+  -webkit-animation:HeaderAnimationZip 1s ease normal both ;
+  -moz-animation:HeaderAnimationZip 1s ease normal both ; 
+  animation:HeaderAnimationZip 1s ease normal both ; 
+}
+@-webkit-keyframes HeaderAnimationZip {
+  0%{ -webkit-transform: translateY(0); }
+  50%{ -webkit-transform: translateY(-40px); }
+  100%{ -webkit-transform: translateY(-40px); }
+}
+@-moz-keyframes HeaderAnimationZip {
+  0%{ -moz-transform: translateY(0); }
+  50%{ -moz-transform: translateY(-40px); }
+  100%{ -moz-transform: translateY(-40px); }
+}
+@keyframes HeaderAnimationZip {
+  0%{ transform: translateY(0); }
+  50%{ transform: translateY(-40px); }
+  100%{ transform: translateY(-40px); }
+}
+@-webkit-keyframes HeaderAnimationUnzip {
+  0%{ -webkit-transform: translateY(-40px); }
+  50%{ -webkit-transform: translateY(-40px); }
+  100%{ -webkit-transform: translateY(0); }
+}
+@keyframes HeaderAnimationUnzip {
+  0%{ transform: translateY(-40px); }
+  50%{ transform: translateY(-40px); }
+  100%{ transform: translateY(0); }
+}
+@-moz-keyframes HeaderAnimationUnzip {
+  0%{ -moz-transform: translateY(-40px); }
+  50%{ -moz-transform: translateY(0); }
+  100%{ -moz-transform: translateY(0); }
+}
+body.page.admin-bar:not(.ux-mobile) #header.menu-default-hide {
+  -webkit-animation:adminHeaderAnimationUnzip 1s ease normal both ; 
+  -moz-animation:adminHeaderAnimationUnzip 1s ease normal both ; 
+  animation:adminHeaderAnimationUnzip 1s ease normal both ; 
+}
+body.page.admin-bar:not(.ux-mobile) #header.menu-default-hide.header-slide-down,
+.no-touch body.page.admin-bar #header.menu-default-hide:not(.header-slide-down):hover {
+  -webkit-animation:adminHeaderAnimationZip 1s ease normal both ;
+  -moz-animation:adminHeaderAnimationZip 1s ease normal both ; 
+  animation:adminHeaderAnimationZip 1s ease normal both ; 
+}
+@-webkit-keyframes adminHeaderAnimationZip {
+  0%{ -webkit-transform: translateY(0); }
+  50%{ -webkit-transform: translateY(-20px); }
+  100%{ -webkit-transform: translateY(-20px); }
+}
+@-moz-keyframes adminHeaderAnimationZip {
+  0%{ -moz-transform: translateY(0); }
+  50%{ -moz-transform: translateY(-20px); }
+  100%{ -moz-transform: translateY(-20px); }
+}
+@keyframes adminHeaderAnimationZip {
+  0%{ transform: translateY(0); }
+  50%{ transform: translateY(-20px); }
+  100%{ transform: translateY(-20px); }
+}
+@-webkit-keyframes adminHeaderAnimationUnzip {
+  0%{ -webkit-transform: translateY(-20px); }
+  50%{ -webkit-transform: translateY(-20px); }
+  100%{ -webkit-transform: translateY(0); }
+}
+@keyframes adminHeaderAnimationUnzip {
+  0%{ transform: translateY(-20px); }
+  50%{ transform: translateY(-20px); }
+  100%{ transform: translateY(0); }
+}
+@-moz-keyframes adminHeaderAnimationUnzip {
+  0%{ -moz-transform: translateY(-20px); }
+  50%{ -moz-transform: translateY(0); }
+  100%{ -moz-transform: translateY(0); }
+}
+
+/* Anima - Logo*/
+body.page #header.menu-default-hide #logo {
+  position: absolute; left: 50%; height: 150px; line-height: 150px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-animation:logoAnimationUnzip 1s ease normal both ; 
+  -moz-animation:logoAnimationUnzip 1s ease normal both ; 
+  animation:logoAnimationUnzip 1s ease normal both ; 
+}
+body.page #header.menu-default-hide.header-slide-down #logo,
+.no-touch body.page #header.menu-default-hide:not(.header-slide-down) #header-inn:hover #logo {
+  -webkit-animation:logoAnimationZip 1s ease normal both ; 
+  -moz-animation:logoAnimationZip 1s ease normal both ; 
+  animation:logoAnimationZip 1s ease normal both ; 
+}
+@-webkit-keyframes logoAnimationZip {
+  0%{ left: 50%; -webkit-transform: translateX(-50%); }
+  50%{ left: 50%; -webkit-transform: translateX(-50%); }
+  100%{ left: 0; -webkit-transform: translateX(0); }
+}
+@-moz-keyframes logoAnimationZip {
+  0%{ left: 50%; -moz-transform: translateX(-50%); }
+  50%{ left: 50%; -moz-transform: translateX(-50%); }
+  100%{ left: 0; -moz-transform: translateX(0); }
+}
+@keyframes logoAnimationZip {
+  0%{ left: 50%; transform: translateX(-50%); }
+  50%{ left: 50%; transform: translateX(-50%); }
+  100%{ left: 0; transform: translateX(0); }
+}
+@-webkit-keyframes logoAnimationUnzip {
+  0%{ left: 0; -webkit-transform: translateX(0); }
+  50%{ left: 50%; -webkit-transform: translateX(-50%); }
+  100%{ left: 50%; -webkit-transform: translateX(-50%); }
+}
+@-moz-keyframes logoAnimationUnzip {
+  0%{ left: 0; -moz-transform: translateX(0); }
+  50%{ left: 50%; -moz-transform: translateX(-50%); }
+  100%{ left: 50%; -moz-transform: translateX(-50%); }
+}
+@keyframes logoAnimationUnzip {
+  0%{ left: 0; transform: translateX(0); }
+  50%{ left: 50%; transform: translateX(-50%); }
+  100%{ left: 50%; transform: translateX(-50%); }
+}
+/* Anima: logo a */
+body.page #header.menu-default-hide #logo a {
+  height: 150px; text-align: center; 
+  -webkit-animation:logoAanimationUnzip 1s ease normal both ;
+  -moz-animation:logoAanimationUnzip 1s ease normal both ; 
+  animation:logoAanimationUnzip 1s ease normal both ;  
+}
+body.page #header.menu-default-hide.header-slide-down #logo a,
+.no-touch body.page #header.menu-default-hide:not(.header-slide-down) #header-inn:hover #logo a { 
+  display: block;
+  -webkit-animation:logoAanimationZip 1s ease normal both ; 
+  -moz-animation:logoAanimationZip 1s ease normal both ; 
+  animation:logoAanimationZip 1s ease normal both ; 
+}
+@-webkit-keyframes logoAanimationZip {
+  0%{ line-height: 150px; height: 150px; }
+  50%{ line-height: 80px; height: 80px; }
+  100%{ line-height: 80px; height: 80px; }
+}
+@-moz-keyframes logoAanimationZip {
+  0%{ line-height: 150px; height: 150px; }
+  50%{ line-height: 80px; height: 80px; }
+  100%{ line-height: 80px; height: 80px; }
+}
+@keyframes logoAanimationZip {
+  0%{ line-height: 150px; height: 150px; }
+  50%{ line-height: 80px; height: 80px; }
+  100%{ line-height: 80px; height: 80px; }
+}
+@-webkit-keyframes logoAanimationUnzip {
+  0%{ line-height: 80px; height: 80px; }
+  50%{ line-height: 80px; height: 80px; }
+  100%{ line-height: 150px; height: 150px; }
+}
+@-moz-keyframes logoAanimationUnzip {
+  0%{ line-height: 80px; height: 80px; }
+  50%{ line-height: 80px; height: 80px; }
+  100%{ line-height: 150px; height: 150px; }
+}
+@keyframes logoAanimationUnzip {
+  0%{ line-height: 80px; height: 80px; }
+  50%{ line-height: 80px; height: 80px; }
+  100%{ line-height: 150px; height: 150px; }
+}
+/* Anima: logo img */
+body.page #header.menu-default-hide #logo .logo-image {
+  display: inline-block; max-height: 60px;
+}
+body.page #header.menu-default-hide.header-slide-down .logo-image,
+.no-touch body.page #header.menu-default-hide:not(.header-slide-down) #header-inn:hover .logo-image {
+  -webkit-animation:logoImgZip 1s ease normal both ; 
+  -moz-animation:logoImgZip 1s ease normal both ; 
+  animation:logoImgZip 1s ease normal both ; 
+}
+@-webkit-keyframes logoImgZip {
+  0%{ max-height: 60px; }
+  50%{ max-height: 40px; }
+  100%{ max-height: 40px; }
+}
+@-moz-keyframes logoImgZip {
+  0%{ max-height: 60px; }
+  50%{ max-height: 40px; }
+  100%{ max-height: 40px; }
+}
+@keyframes logoImgZip {
+  0%{ max-height: 60px; }
+  50%{ max-height: 40px; }
+  100%{ max-height: 40px; }
+}
+/* Anima : menu search */
+body.page #header.menu-default-hide #header-inn-main {
+  visibility: hidden; opacity: 0;
+   -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+body.page #header.menu-default-hide.header-slide-down #header-inn-main,
+.no-touch body.page #header.menu-default-hide:not(.header-slide-down) #header-inn:hover #header-inn-main {
+  visibility: visible; opacity: 1;
+  -webkit-transition: all .5s .5s;
+  -moz-transition: all .5s .5s;
+  -ms-transition: all .5s .5s;
+  -o-transition: all .5s .5s;
+  transition: all .5s .5s;
+}
+/* Anima : black bg */
+body.page #header.menu-default-hide .header-bg {
+  width: 150px; height: 150px; position: absolute; z-index: -1; top: 0; left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-animation:headerBGanimationUnzip 1s ease normal both ; 
+  -moz-animation:headerBGanimationUnzip 1s ease normal both ; 
+  animation:headerBGanimationUnzip 1s ease normal both ; 
+}
+body.page #header.menu-default-hide.header-slide-down .header-bg,
+.no-touch body.page #header.menu-default-hide:not(.header-slide-down) #header-inn:hover ~ .header-bg {
+  -webkit-animation:headerBGanimationZip 1s ease normal both ; 
+  -moz-animation:headerBGanimationZip 1s ease normal both ; 
+  animation:headerBGanimationZip 1s ease normal both ; 
+}
+@-webkit-keyframes headerBGanimationZip {
+  0%{ height: 150px; width: 150px; }
+  50%{ height: 80px; width: 150px; }
+  100%{ height: 80px; width: 100%; }
+}
+@-moz-keyframes headerBGanimationZip {
+  0%{ height: 150px; width: 150px; }
+  50%{ height: 80px; width: 150px; }
+  100%{ height: 80px; width: 100%; }
+}
+@keyframes headerBGanimationZip {
+  0%{ height: 150px; width: 150px; }
+  50%{ height: 80px; width: 150px; }
+  100%{ height: 80px; width: 100%; }
+}
+@-webkit-keyframes headerBGanimationUnzip {
+  0%{ height: 80px; width: 100%; }
+  50%{ height: 80px; width: 150px; }
+  100%{ height: 150px; width: 150px; }
+}
+@-moz-keyframes headerBGanimationUnzip {
+  0%{ height: 80px; width: 100%; }
+  50%{ height: 80px; width: 170px; }
+  100%{ height: 150px; width: 170px; }
+}
+@keyframes headerBGanimationUnzip {
+  0%{ height: 80px; width: 100%; }
+  50%{ height: 80px; width: 170px; }
+  100%{ height: 150px; width: 170px; }
+}
