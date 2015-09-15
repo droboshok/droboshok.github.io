@@ -1,19 +1,19 @@
 
-http://droboshok.in.ua/404.html
-http://droboshok.in.ua/articles/about.html
-http://droboshok.in.ua/articles/all.html
-http://droboshok.in.ua/archive.html
-http://droboshok.in.ua/categories.html
-http://droboshok.in.ua/index.html
-http://droboshok.in.ua/index1.html
-http://droboshok.in.ua/pages.html
-http://droboshok.in.ua/sitemap.html
+http://droboshok.in.ua/404
+http://droboshok.in.ua/about
+http://droboshok.in.ua/archive
+http://droboshok.in.ua/categories
+http://droboshok.in.ua/
+http://droboshok.in.ua/assets/css/main.css
+http://droboshok.in.ua/assets/css/normalize.css
+http://droboshok.in.ua/rss.xml
+http://droboshok.in.ua/sitemap
 http://droboshok.in.ua/sitemap.txt
-http://droboshok.in.ua/tags.html
-http://droboshok.in.ua/2/index.html
+http://droboshok.in.ua/page2/
 
-http://droboshok.in.ua/web/flickr-and-jekyll.html
-http://droboshok.in.ua/jekyll/links.html
-http://droboshok.in.ua/web/shortlink.html
-http://droboshok.in.ua/web/godrive.html
-http://droboshok.in.ua/jekyll/001.html
+http://droboshok.in.ua/jekyll/2015/09/jekyll.html
+http://droboshok.in.ua/jekyll/2015/08/flickr-and-jekyll.html
+http://droboshok.in.ua/jekyll/2015/01/links.html
+http://droboshok.in.ua/web/2014/08/shortlink.html
+http://droboshok.in.ua/web/2014/08/godrive.html
+http://droboshok.in.ua/jekyll/2014/08/001.html
